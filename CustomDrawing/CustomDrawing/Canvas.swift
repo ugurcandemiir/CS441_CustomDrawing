@@ -9,6 +9,9 @@ import UIKit
 
 class Canvas: UIView{
     
+    var lineColor = UIColor.cyan;
+    
+     
     func undo(){
         _ = line.popLast()
         setNeedsDisplay()
@@ -19,6 +22,7 @@ class Canvas: UIView{
         line.removeAll()
         setNeedsDisplay()
     }
+
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -26,7 +30,7 @@ class Canvas: UIView{
         guard let context = UIGraphicsGetCurrentContext() else {return}
 //        self.backgroundColor = UIColor.white
         
-        context.setStrokeColor(UIColor.red.cgColor)
+        context.setStrokeColor(lineColor.cgColor)
         context.setLineWidth(10)
         
         for (i,p) in line.enumerated(){

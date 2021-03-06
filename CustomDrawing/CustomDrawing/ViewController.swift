@@ -8,7 +8,6 @@
 import UIKit
 
 
-
 class ViewController: UIViewController {
 
     let canvas = Canvas()
@@ -27,13 +26,15 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(handleClear), for: .touchUpInside)
         return button
     }()
+
+    
     @objc func handleClear(){
         canvas.clear()
     }
     @objc func handleUndo(){
         canvas.undo()
     }
-    
+
     override func loadView() {
         self.view = canvas
     }
