@@ -9,6 +9,17 @@ import UIKit
 
 class Canvas: UIView{
     
+    func undo(){
+        _ = line.popLast()
+        setNeedsDisplay()
+    }
+    
+    
+    func clear(){
+        line.removeAll()
+        setNeedsDisplay()
+    }
+    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
