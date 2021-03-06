@@ -7,13 +7,22 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
+    let canvas = Canvas()
+    
+    override func loadView() {
+        self.view = canvas
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        canvas.backgroundColor = .white
+//        view.addSubview(canvas)
+//        canvas.frame = view.frame
     }
-
-
+    
 }
 
