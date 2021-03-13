@@ -15,4 +15,4 @@ Make a "grocery list" type app -- where you can add things to the list in the ta
   
 # GIF
 
-<img src="http://g.recordit.co/CXqEcxQe2P.gif" width=350><br>
+<img src="http://g.recordit.co/6GM8EAES0O.gif" width=350><br>
