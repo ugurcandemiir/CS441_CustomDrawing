@@ -6,13 +6,13 @@ Ugurcan Demir
 
 # Homework : 
 
-  Create a new class/view that can be placed on the screen, and use low-level primitives to draw on it.  Lines.  Text.  Images, Your choice; the goal is to get to a spot where you can comfortably put things on screen, and have some control over them.
-Also have some support for animation and interaction -- drag things around, drag a line to draw, use a slider or a button to change things on the screen.
+  You'll create the table widget on the screen (Interface Builder, or the WYSIWYG in Android Studio), and then connect it to methods that tell the widget how many rows are in the table, and what is in each row.  The phone UI and code will handle the drawing, letting a user scroll through and select things.
+Make a "grocery list" type app -- where you can add things to the list in the table, and remove them in some way.  The phones have different swiping and double tapping methods that work well -- dig in, and figure this out!  Once you know how to do things with a table, you'll have a good understanding of how almost everything else works on the phone APIs!
 
 # The application idea : 
-  I made a simple app that you can draw and clear the canvas. There is also undo button that you can clear your last movements.
+  I made a simple app that you can add and delete item from your list. You can slide the row to delete your items from the list
  
   
 # GIF
 
-<img src="http://g.recordit.co/6GM8EAES0O.gif" width=350><br>
+<img src="http://g.recordit.co/CXqEcxQe2P.gif" width=350><br>
